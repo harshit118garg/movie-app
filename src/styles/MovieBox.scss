@@ -1,0 +1,53 @@
+@import "../sass/mixin";
+@import "../sass/variables";
+
+.movieBox {
+  border: 2px solid black;
+  margin-bottom: 3rem;
+  border-radius: $radius;
+  transition: $transition;
+  background-color: aquamarine;
+  box-shadow: $medium-shadow;
+
+  .imgBox {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+
+    img {
+      width: 200px;
+      height: 300px;
+      border-radius: $radius * 2;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .title {
+    h5 {
+      font-size: $fontSize;
+      font-weight: $fontWeight;
+      text-align: center;
+      text-transform: uppercase;
+      word-spacing: $spacing;
+      margin-bottom: 2rem;
+      transition: $transition;
+      font-family: $fontFamily;
+
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #3c3939;
+    border: 2px solid #fff;
+  }
+}

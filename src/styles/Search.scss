@@ -1,0 +1,25 @@
+@import '../sass/mixin';
+@import '../sass/variables';
+
+.inputField {
+    h3 {
+        font-size: $fontSize;
+        text-transform: uppercase;
+        font-weight: $fontWeight;
+        text-shadow: $medium-shadow;
+        word-spacing: $spacing;
+    }
+    form {
+        input {
+            outline: none;
+            border: none;
+            font-weight: $fontWeight;
+            color: $redColor;
+            padding: 1rem;
+            font-size: $fontSize;
+            text-align: center;
+            border-radius: $radius * 2;
+            box-shadow: $light-shadow;
+        }
+    }
+}
