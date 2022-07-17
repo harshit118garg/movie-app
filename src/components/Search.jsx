@@ -17,9 +17,11 @@ const Search = () => {
             onChange={(e) => setUserQuery(e.target.value)}
           />
         </form>
-        <div className="input-error">
-          <p> {isError.show && isError.msg} </p>
-        </div>
+        {isError.show && (
+          <div className="input-error">
+            <p> {isError.show && isError.msg} </p>
+          </div>
+        )}
       </section>
     </>
   );

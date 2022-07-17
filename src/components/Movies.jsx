@@ -10,7 +10,7 @@ const Movies = () => {
     <>
       <section className="container">
         <div className="row">
-          {movie.map((newMovie) => {
+          {movie && movie.map((newMovie) => {
             return (
               <MovieBox
                 newMovie={newMovie}

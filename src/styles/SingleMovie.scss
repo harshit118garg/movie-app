@@ -1,2 +1,38 @@
-@import '../sass/mixin';
-@import '../sass/variables';
+@import "../sass/mixin";
+@import "../sass/variables";
+
+//992
+
+.container {
+  .row {
+    .col-md-4 {
+      .imgBox {
+        img {
+          @media (max-width: 576px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 450px;
+          }
+        }
+        @media (max-width: 576px) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .col-md-8 {
+      h1 {
+        @media (max-width: 576px) {
+            text-align: left;
+            font-size: 2rem;
+        }
+      }
+      p:nth-child(1) {
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    overflow: hidden;
+  }
+}
